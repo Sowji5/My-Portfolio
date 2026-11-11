@@ -1,0 +1,1146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sowjanya | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* GENERAL STYLING */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        section {
+            scroll-margin-top: 85px;
+        }
+
+        .purple {
+            color: aqua;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            margin: 10px 0 35px;
+        }
+
+        .section-subtitle {
+            color: gray;
+            font-size: 14px;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1px;
+            margin: 50px 8%;
+        }
+
+
+        /* NAVBAR */
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 70px;
+            background-color: deeppink;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: steelblue;
+        }
+
+
+        /* HOME SECTION */
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 85vh;
+            padding: 50px 8%;
+        }
+
+        .firstSection > div {
+            width: 45%;
+        }
+
+        .leftSection {
+            font-size: 2.8rem;
+            line-height: 1.6;
+        }
+
+        .leftSection h1 {
+            font-size: inherit;
+        }
+
+        .leftSection .intro-text {
+            font-size: 1.8rem;
+        }
+
+        #element {
+            color: darkorchid;
+            font-weight: 600;
+        }
+
+        .rightSection {
+            text-align: center;
+        }
+
+        .rightSection img {
+            width: 85%;
+            max-width: 400px;
+        }
+
+        .hero-description {
+            color: #bdbdd0;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 22px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .primary-btn {
+            background-color: deeppink;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background-color: #c90070;
+        }
+
+        .secondary-btn {
+            border: 1px solid aqua;
+            color: aqua;
+        }
+
+        .secondary-btn:hover {
+            background-color: aqua;
+            color: #000021;
+        }
+
+
+        /* ABOUT SECTION */
+
+        .aboutSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background-color: #10102f;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #29294d;
+        }
+
+        /* Professional About Profile */
+
+.about-image {
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 2px solid aqua;
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.15);
+    flex-shrink: 0;
+}
+
+.about-image {
+    width: 360px;
+    height: 324px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .about-image {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        aspect-ratio: 10 / 9;
+        margin: 0 auto 25px;
+    }
+}
+
+
+        .about-text p {
+            color: #c4c4d6;
+            font-size: 14px;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+
+
+/* Work Experience Section */
+
+.secondSection {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+
+.section-subtitle {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.secondSection h1 {
+    font-size: 32px;
+    margin-bottom: 45px;
+    color: white;
+}
+
+/* Timeline */
+
+.experience-container {
+    position: relative;
+    padding-left: 35px;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background-color: aqua;
+}
+
+.experience-item {
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -33px;
+    top: 12px;
+    width: 14px;
+    height: 14px;
+    background-color: deeppink;
+    border: 2px solid aqua;
+    border-radius: 50%;
+}
+
+/* Experience Card */
+
+.experience-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px;
+    background: #10103b;
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    border-radius: 12px;
+    max-width: 750px;
+}
+
+.company-logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.experience-details h2 {
+    color: aqua;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.experience-details h3 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.experience-details span {
+    color: deeppink;
+    font-size: 14px;
+}
+
+.experience-details p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .experience-content {
+        flex-direction: column;
+        padding: 18px;
+    }
+}
+
+        
+
+        /* EDUCATION SECTION */
+
+        .educationSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .education-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .education-card {
+            background-color: #10102f;
+            border: 1px solid #33335c;
+            border-radius: 10px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .education-card:hover {
+            transform: translateY(-7px);
+            border-color: deeppink;
+        }
+
+        .education-card h3 {
+            color: aqua;
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .education-card p {
+            color: #bdbdd0;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .education-year {
+            color: deeppink;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+
+        /* TECHNICAL SKILLS */
+
+        .skillsSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: #10102f;
+            border: 1px solid #33335c;
+            padding: 25px 15px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-7px);
+            border-color: aqua;
+        }
+
+        .skill-card h3 {
+            color: aqua;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .skill-card p {
+            color: #bdbdd0;
+            font-size: 13px;
+        }
+
+
+        /* PROJECTS SECTION */
+
+        .projectsSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: #10102f;
+            border: 1px solid #33335c;
+            border-radius: 10px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: deeppink;
+        }
+
+        .project-card h3 {
+            color: aqua;
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #bdbdd0;
+            font-size: 13px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+
+        .tech-tags span {
+            background-color: #29294d;
+            color: #d7c8ff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+        }
+
+        .project-link {
+            color: deeppink;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .project-link:hover {
+            color: aqua;
+        }
+
+
+        /* CONTACT SECTION */
+
+        .contactSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 0 80px;
+        }
+
+        .contact-container {
+            background-color: #10102f;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #33335c;
+        }
+
+        .contact-container p {
+            color: #bdbdd0;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: aqua;
+            font-size: 14px;
+        }
+
+        .contact-links a:hover {
+            color: deeppink;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background-color: #10102f;
+            padding: 25px;
+            text-align: center;
+            border-top: 1px solid #33335c;
+        }
+
+        footer p {
+            color: gray;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: aqua;
+        }
+
+
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 900px) {
+
+            nav {
+                flex-direction: column;
+                padding: 15px;
+                gap: 12px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav ul li {
+                margin: 0 7px;
+            }
+
+            .firstSection {
+                padding: 40px 6%;
+            }
+
+            .leftSection {
+                font-size: 2rem;
+            }
+
+            .skills-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+                padding: 60px 8%;
+            }
+
+            .firstSection > div {
+                width: 100%;
+            }
+
+            .leftSection {
+                font-size: 2rem;
+            }
+
+            .leftSection .intro-text {
+                font-size: 1.3rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .rightSection img {
+                width: 75%;
+                margin-top: 30px;
+            }
+
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .education-container,
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .secondSection .vertical {
+                left: 10%;
+            }
+
+            .vertical-desc {
+                width: 220px;
+            }
+
+            .section-heading {
+                font-size: 1.6rem;
+            }
+
+            .aboutSection,
+            .secondSection,
+            .educationSection,
+            .skillsSection,
+            .projectsSection,
+            .contactSection {
+                max-width: 88vw;
+            }
+
+            main hr {
+                margin: 35px 6%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav>
+            <div class="left">Sowjanya's Portfolio</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Tech Stack</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HOME SECTION -->
+
+        <section class="firstSection" id="home">
+
+            <div class="leftSection">
+
+                <h1>Hi, My name is
+                    <span class="purple">Sowjanya</span>
+                </h1>
+
+                <div class="intro-text">
+                    And I'm an aspiring
+                </div>
+
+                <div>
+                    <span id="element"></span>
+                </div>
+
+                <p class="hero-description">
+                    Computer Science and Data Science graduate
+                    passionate about programming, software development
+                    and building meaningful projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        View My Projects
+                    </a>
+
+                    <a href="Sowjanya_Resume_Updated.pdf" class="btn secondary-btn" download>
+                        Download Resume
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="rightSection">
+                <img src="dev.png" alt="Developer illustration">
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ABOUT SECTION -->
+
+        <section class="aboutSection" id="about">
+
+            <span class="text-gray">Get to know me</span>
+
+            <h2 class="section-heading">About Me</h2>
+
+            <div class="about-content">
+
+                    <div class="about-image">
+                        <img src="profile.png" alt="Sowjanya - Profile Photo">
+                    </div>
+                <div class="about-text">
+
+                    <p>
+                        Hello! I'm Sowjanya, a 2025 Computer Science
+                        and Data Science graduate from Swami Vivekananda
+                        Institute of Technology.
+                    </p>
+
+                    <p>
+                        I have an interest in software development,
+                        programming and data analysis. I enjoy learning
+                        new technologies and applying my knowledge
+                        through practical projects.
+                    </p>
+
+                    <p>
+                        I have also completed a Data Analyst internship
+                        at Elevate Labs, where I worked with Python,
+                        SQL and Excel for data cleaning, preprocessing
+                        and analysis.
+                    </p>
+
+                    <p>
+                        My goal is to grow as a software developer
+                        and contribute to meaningful real-world projects.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- WORK EXPERIENCE -->
+
+        
+<section class="secondSection" id="experience">
+
+    <p class="section-subtitle">My professional journey</p>
+    <h1>Work Experience</h1>
+
+    <div class="experience-container">
+
+        <div class="timeline-line"></div>
+
+        <div class="experience-item">
+            <div class="timeline-dot"></div>
+
+            <div class="experience-content">
+
+                <div class="company-logo">
+                    <img src="ele.jpg" alt="Elevate Labs logo">
+                </div>
+
+                <div class="experience-details">
+                    <h2>Data Analyst Intern</h2>
+                    <h3>Elevate Labs</h3>
+                    <span>April 2025 – May 2025</span>
+
+                    <p>
+                        Worked with Python, SQL and Excel for data
+                        cleaning, preprocessing, statistical analysis
+                        and visualization. Analyzed datasets to identify
+                        useful insights and support data-driven
+                        decision-making.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+        <hr>
+
+
+        <!-- EDUCATION SECTION -->
+
+        <section class="educationSection" id="education">
+
+            <span class="text-gray">My academic background</span>
+
+            <h2 class="section-heading">Education</h2>
+
+            <div class="education-container">
+
+                <div class="education-card">
+
+                    <p class="education-year">2021 – 2025</p>
+
+                    <h3>B.Tech – CSE (Data Science)</h3>
+
+                    <p>
+                        Swami Vivekananda Institute of Technology
+                        <br>
+                        JNTUH
+                        <br>
+                        CGPA: 6.90
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <p class="education-year">2019 – 2021</p>
+
+                    <h3>Intermediate – MPC</h3>
+
+                    <p>
+                        Sri Chaitanya Junior College
+                        <br>
+                        GPA: 8.8
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- TECHNICAL SKILLS -->
+
+        <section class="skillsSection" id="skills">
+
+            <span class="text-gray">Technologies I work with</span>
+
+            <h2 class="section-heading">Technical Skills</h2>
+
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <p>Programming</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Programming & Data Analysis</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Web Development</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Web Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Bootstrap</h3>
+                    <p>Frontend Framework</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Basic Web Interactivity</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>MySQL</h3>
+                    <p>Database Management</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Excel</h3>
+                    <p>Data Handling</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Git</h3>
+                    <p>Version Control</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>GitHub</h3>
+                    <p>Code Hosting</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- PROJECTS SECTION -->
+
+        <section class="projectsSection" id="projects">
+
+            <span class="text-gray">Things I have built</span>
+
+            <h2 class="section-heading">My Projects</h2>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+
+                    <h3>Social Media Post Detection</h3>
+
+                    <p>
+                        Developed an NLP-based application to process
+                        and classify social media posts, with text
+                        preprocessing, feature extraction and
+                        classification techniques.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Machine Learning</span>
+                    </div>
+
+                    <a href="https://github.com/Sowji5"
+                       target="_blank" class="project-link">
+                        GitHub Profile →
+                    </a>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>College Management ERP</h3>
+
+                    <p>
+                        Created a college management system to manage
+                        student records, attendance and academic
+                        information using database operations.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                    </div>
+
+                    <a href="https://github.com/Sowji5"
+                       target="_blank" class="project-link">
+                        GitHub Profile →
+                    </a>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>Netflix Clone</h3>
+
+                    <p>
+                        Created a Netflix-inspired website interface
+                        to practice webpage structure, styling
+                        and frontend development.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="https://github.com/Sowji5"
+                       target="_blank" class="project-link">
+                        GitHub Profile →
+                    </a>
+
+                </div>
+
+
+                <div class="project-card">
+    <h3>Content-Based Recommendation Engine</h3>
+
+    <p>
+        Developed a recommendation system that suggests relevant items
+        based on users' interests and item features. Used content
+        similarity techniques to identify and recommend similar items.
+    </p>
+
+    <h4>Technologies Used:</h4>
+    <p>Python, Pandas, NumPy, Scikit-learn</p>
+
+    <a href="https://github.com/Sowji5" target="_blank">
+        View Project
+    </a>
+</div>
+
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- CONTACT SECTION -->
+
+        <section class="contactSection" id="contact">
+
+            <span class="text-gray">Let's connect</span>
+
+            <h2 class="section-heading">Contact Me</h2>
+
+            <div class="contact-container">
+
+                <p>
+                    I'm interested in software development
+                    opportunities, learning experiences and
+                    connecting with people in the tech community.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="pdvlsowjanya@gmail.com">
+                        Email Me
+                    </a>
+
+                    <a href="https://github.com/Sowji5"
+                       target="_blank">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/dvl-sowjanya-p-043788257/"
+                       target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Designed and developed by
+            <a href="#home">Sowjanya</a>
+        </p>
+
+        <p>© 2026 Sowjanya. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- TYPED.JS -->
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+
+        var typed = new Typed('#element', {
+
+            strings: [
+                'Software Developer',
+                'Python Developer',
+                'Computer Science Graduate',
+                'Data Enthusiast',
+                'Problem Solver'
+            ],
+
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1200,
+            loop: true
+
+        });
+
+    </script>
+
+</body>
+</html>
